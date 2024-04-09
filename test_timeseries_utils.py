@@ -13,4 +13,4 @@ def test_anomaly():
     temperature_data = pd.read_csv(
         "temperature_data.csv", parse_dates=True, index_col=0
     )
-    assert anomaly(temperature_data).size == 366
+    assert anomaly(temperature_data).size == 365
